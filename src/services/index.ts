@@ -9,7 +9,7 @@ export const api = axios.create({
 
 export async function getJokes(text:String) {
   try {
-    const res = await api.get(`?query={${text}}`);
+    const res = await api.get(`?query=${text}`);
 
     return res.data;
   } catch (err) {

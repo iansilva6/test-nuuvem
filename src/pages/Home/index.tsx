@@ -1,4 +1,4 @@
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap"
 import { SearchForm } from '../../components/SearchForm'
 
 export const Home = () => {

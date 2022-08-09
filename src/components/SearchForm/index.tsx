@@ -1,14 +1,14 @@
-import React from "react";
-import { Form, Button } from "react-bootstrap";
-import { useNavigate } from 'react-router-dom';
+import React from "react"
+import { Form, Button } from "react-bootstrap"
+import { useNavigate } from 'react-router-dom'
 
 export const SearchForm = () => {
-  const [searchText, setSearchText] = React.useState("");
-  const history = useNavigate();
+  const [searchText, setSearchText] = React.useState("")
+  const history = useNavigate()
 
   const search = (evt: React.FormEvent) => {
-    evt.preventDefault();
-    history(`/search?joke=${searchText}`);
+    evt.preventDefault()
+    history(`/search?joke=${searchText}`)
   };
 
   return (
@@ -24,9 +24,6 @@ export const SearchForm = () => {
         />
       </Form.Group>
       <div className="d-flex justify-content-center">
-        <Button variant="light" className="me-4">
-          I'm feeling lucky
-        </Button>
         <Button variant="primary" type="submit">
           Search
         </Button>
